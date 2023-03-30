@@ -8,12 +8,12 @@ public class TestNgDemo {
 	
 	@Test(priority = 1)
 	public void login1() {
-		System.out.println("home ... ");
+		System.out.println("home page ... ");
 	}
 	
 	@Test(priority = 1)
 	public void login2() {
-		System.out.println("login .... ");
+		System.out.println("login page .... ");
 	}
 	
 	@Test (priority = 1)
