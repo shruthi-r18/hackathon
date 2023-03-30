@@ -11,19 +11,19 @@ public class TestNgDemo {
 		System.out.println("home page ... ");
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void login2() {
 		System.out.println("login page .... ");
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 4)
 	public void accounts() {
-		System.out.println("accounts.... ");
+		System.out.println("accounts page.... ");
 	}
 	
-	@Test (priority = -1)
+	@Test (priority = 0)
 	public void opportunities() {
-		System.out.println("opportunities... ");
+		System.out.println("opportunities page... ");
 	}
 	
 }
