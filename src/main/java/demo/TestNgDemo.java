@@ -16,7 +16,7 @@ public class TestNgDemo {
 		System.out.println("login page .... ");
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 2)
 	public void accounts() {
 		System.out.println("accounts.... ");
 	}
