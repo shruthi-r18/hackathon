@@ -6,17 +6,17 @@ import org.testng.annotations.Test;
 
 public class TestNgDemo {
 	
-	@Test(priority = 1)
+	@Test()
 	public void login1() {
-		System.out.println("home page ... ");
+		System.out.println("home ... ");
 	}
 	
-	@Test(priority = 1)
+	@Test()
 	public void login2() {
-		System.out.println("login page .... ");
+		System.out.println("login .... ");
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 3)
 	public void accounts() {
 		System.out.println("accounts.... ");
 	}
