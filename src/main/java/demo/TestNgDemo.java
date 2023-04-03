@@ -1,14 +1,20 @@
 package demo;
 
+import java.io.IOException;
 import java.util.NoSuchElementException;
 
 import org.testng.annotations.Test;
 
+import constants.FileConstants;
+import file.utils.PropertiesFileutils;
+
 public class TestNgDemo {
 	
 	@Test(priority = 3)
-	public void login1() {
+	public void login1() throws IOException {
 		System.out.println("home page ... ");
+		
+		String sUsername = PropertiesFileutils.readPropertiesFile(FileConstants.CREDENTIALS_FILE_PATH, "dev.username");
 	}
 	
 	@Test(priority = 2)
@@ -16,22 +22,9 @@ public class TestNgDemo {
 		System.out.println("login page .... ");
 	}
 	
-<<<<<<< HEAD
-	@Test (priority = 1)
-=======
 	@Test (priority = 3)
->>>>>>> 9171585 (Final changes for bugfix)
 	public void accounts() {
 		System.out.println("accounts page.... ");
-	}
-	
-<<<<<<< HEAD
-	@Test ()
-=======
-	@Test (priority = 4)
->>>>>>> 9171585 (Final changes for bugfix)
-	public void opportunities() {
-		System.out.println("opportunities page... ");
 	}
 	
 }
