@@ -4,5 +4,5 @@ public class WaitConstants {
 	
 	public static final int WAIT_FOR_HOMEPAGE_TO_LOAD = 5;
 	public static final int WAIT_FOR_PROFILE_ICON_TO_LOAD = 7;
-
+	public static final int WAIT_FOR_ELEMENT_TO_LOAD = 20;
 }
