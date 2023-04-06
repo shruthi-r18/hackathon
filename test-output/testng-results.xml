@@ -1,127 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23908" started-at="2023-04-05T18:52:55Z" finished-at="2023-04-05T18:53:19Z">
+  <suite name="Regression" duration-ms="47693" started-at="2023-04-06T17:57:29Z" finished-at="2023-04-06T17:58:17Z">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.loginTest()[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest" class="tests.LoginTest"/>
+        <method signature="LoginTest.loginTest1()[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest1" class="tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.loginTest()[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="23908" started-at="2023-04-05T18:52:55Z" finished-at="2023-04-05T18:53:19Z">
+    <test name="Test" duration-ms="47693" started-at="2023-04-06T17:57:29Z" finished-at="2023-04-06T17:58:17Z">
       <class name="tests.LoginTest">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@63a65a25]" name="setDriver" is-config="true" duration-ms="5207" started-at="2023-04-05T11:52:55Z" finished-at="2023-04-05T11:53:01Z">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="setDriver" is-config="true" duration-ms="10733" started-at="2023-04-06T10:57:30Z" finished-at="2023-04-06T10:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:tests.LoginTest@63a65a25]" name="loginTest" duration-ms="4094" started-at="2023-04-05T11:53:01Z" finished-at="2023-04-05T11:53:05Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Actual URL should match the expected URL expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Actual URL should match the expected URL expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at tests.LoginTest.loginTest(LoginTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="setDriver" is-config="true" duration-ms="7760" started-at="2023-04-06T10:57:30Z" finished-at="2023-04-06T10:57:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@63a65a25]" name="removeDriver" is-config="true" duration-ms="832" started-at="2023-04-05T11:53:05Z" finished-at="2023-04-05T11:53:06Z">
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="setDriver" is-config="true" duration-ms="11160" started-at="2023-04-06T10:57:30Z" finished-at="2023-04-06T10:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="loginTest3(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest3" duration-ms="115" started-at="2023-04-06T10:57:37Z" data-provider="userCreds" finished-at="2023-04-06T10:57:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chandra@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345Chandra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest3 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="removeDriver" is-config="true" duration-ms="6816" started-at="2023-04-06T10:57:37Z" finished-at="2023-04-06T10:57:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@63a65a25]" name="setDriver" is-config="true" duration-ms="2466" started-at="2023-04-05T11:53:06Z" finished-at="2023-04-05T11:53:08Z">
+        <test-method status="PASS" signature="loginTest3(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest3" duration-ms="7" started-at="2023-04-06T10:57:40Z" data-provider="userCreds" finished-at="2023-04-06T10:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[deekshith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234deekshith]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:tests.LoginTest@63a65a25]" name="loginTest" duration-ms="4091" started-at="2023-04-05T11:53:08Z" finished-at="2023-04-05T11:53:12Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Actual URL should match the expected URL expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Actual URL should match the expected URL expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at tests.LoginTest.loginTest(LoginTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@63a65a25]" name="removeDriver" is-config="true" duration-ms="626" started-at="2023-04-05T11:53:12Z" finished-at="2023-04-05T11:53:13Z">
+        </test-method> <!-- loginTest3 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="removeDriver" is-config="true" duration-ms="4881" started-at="2023-04-06T10:57:40Z" finished-at="2023-04-06T10:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@63a65a25]" name="setDriver" is-config="true" duration-ms="2538" started-at="2023-04-05T11:53:13Z" finished-at="2023-04-05T11:53:15Z">
+        <test-method status="PASS" signature="loginTest3(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest3" duration-ms="4" started-at="2023-04-06T10:57:41Z" data-provider="userCreds" finished-at="2023-04-06T10:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mithun.r@tekarch.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234Sam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest3 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="removeDriver" is-config="true" duration-ms="3938" started-at="2023-04-06T10:57:41Z" finished-at="2023-04-06T10:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="setDriver" is-config="true" duration-ms="3433" started-at="2023-04-06T10:57:57Z" finished-at="2023-04-06T10:58:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:tests.LoginTest@63a65a25]" name="loginTest" duration-ms="3212" started-at="2023-04-05T11:53:15Z" finished-at="2023-04-05T11:53:18Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Actual URL should match the expected URL expected [true] but found [false]]]>
-            </message>
+        <test-method status="PASS" signature="loginTest1()[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest1" duration-ms="6454" depends-on-groups="smoke" started-at="2023-04-06T10:58:01Z" finished-at="2023-04-06T10:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest1 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="removeDriver" is-config="true" duration-ms="887" started-at="2023-04-06T10:58:07Z" finished-at="2023-04-06T10:58:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="setDriver" is-config="true" duration-ms="2997" started-at="2023-04-06T10:58:08Z" finished-at="2023-04-06T10:58:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="FAIL" signature="loginTest2()[pri:0, instance:tests.LoginTest@2f112965]" name="loginTest2" duration-ms="5166" started-at="2023-04-06T10:58:11Z" depends-on-methods="tests.LoginTest.loginTest1" finished-at="2023-04-06T10:58:16Z">
+          <exception class="java.util.NoSuchElementException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Actual URL should match the expected URL expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at tests.LoginTest.loginTest(LoginTest.java:29)
+              <![CDATA[java.util.NoSuchElementException
+	at tests.LoginTest.loginTest2(LoginTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -149,15 +134,53 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.util.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@63a65a25]" name="removeDriver" is-config="true" duration-ms="743" started-at="2023-04-05T11:53:18Z" finished-at="2023-04-05T11:53:19Z">
+        </test-method> <!-- loginTest2 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.LoginTest@2f112965]" name="removeDriver" is-config="true" duration-ms="721" started-at="2023-04-06T10:58:16Z" finished-at="2023-04-06T10:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDriver -->
       </class> <!-- tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="tests.HomeTest">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.HomeTest@1a04f701]" name="setDriver" is-config="true" duration-ms="2935" started-at="2023-04-06T10:57:45Z" finished-at="2023-04-06T10:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="homePage1()[pri:0, instance:tests.HomeTest@1a04f701]" name="homePage1" duration-ms="2" started-at="2023-04-06T10:57:48Z" finished-at="2023-04-06T10:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage1 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.HomeTest@1a04f701]" name="removeDriver" is-config="true" duration-ms="1111" started-at="2023-04-06T10:57:48Z" finished-at="2023-04-06T10:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.HomeTest@1a04f701]" name="setDriver" is-config="true" duration-ms="3062" started-at="2023-04-06T10:57:49Z" finished-at="2023-04-06T10:57:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="homePage2()[pri:0, instance:tests.HomeTest@1a04f701]" name="homePage2" duration-ms="2" started-at="2023-04-06T10:57:52Z" finished-at="2023-04-06T10:57:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage2 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.HomeTest@1a04f701]" name="removeDriver" is-config="true" duration-ms="1087" started-at="2023-04-06T10:57:52Z" finished-at="2023-04-06T10:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:tests.HomeTest@1a04f701]" name="setDriver" is-config="true" duration-ms="3028" started-at="2023-04-06T10:57:53Z" finished-at="2023-04-06T10:57:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="homePage3()[pri:0, instance:tests.HomeTest@1a04f701]" name="homePage3" duration-ms="1" started-at="2023-04-06T10:57:56Z" finished-at="2023-04-06T10:57:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage3 -->
+        <test-method status="PASS" signature="removeDriver()[pri:0, instance:tests.HomeTest@1a04f701]" name="removeDriver" is-config="true" duration-ms="959" started-at="2023-04-06T10:57:56Z" finished-at="2023-04-06T10:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+      </class> <!-- tests.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Regression -->
 </testng-results>
